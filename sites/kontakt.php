@@ -92,7 +92,7 @@
                             </div>
                         </div>
                     </div>
-
+    <!-- TODO (20. September 2018 - 0:35:41)~Alph: Das Formular muss noch validiert werden! -->
                     <div class="col-xs-12 col-md-12 product-description contact-container">
                         <h2>Fragen? Anregungen? Kritik? Schreiben Sie uns!</h2>
                         <form action="#">
@@ -110,7 +110,7 @@
                                           placeholder="Ihr Kommentar"></textarea>
                             </p>
                             <p>
-                                <input type="submit" value="Absenden">
+                                <input type="submit" id="send" value="Absenden">
                             </p>
                         </form>
                     </div>
