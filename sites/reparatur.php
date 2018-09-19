@@ -25,7 +25,7 @@
 
 <div class="container-fluid aktu-bg">
     <div class="container">
-        <h1 class="heading-container">UNSERE REPARATUREISTUNGEN</h1>
+        <h1 class="heading-container">REPARATUREN</h1>
         <div class="bredcumb-con">
             <ul class="my-breadcumb">
                 <li><a href="../index.php">Home</a></li>
@@ -42,7 +42,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-12 no-padding product-container">
                         <div class="col-xs-12 col-md-12 service-conatiner">
-                            <h2>UNSERE LEISTUNGEN</h2>
+                            <h2>Reparaturen sind unsere Stärke</h2>
                             <h3>Wir bieten Ihnen Rundumversorgung für Ihre
                                 digitale Welt.</h3>
                             <p>Egal ob zu Hause oder am Arbeitsplatz, ohne PC,

@@ -25,11 +25,11 @@
 
 <div class="container-fluid aktu-bg">
     <div class="container">
-        <h1 class="heading-container">UNSERE LEISTUNGEN</h1>
+        <h1 class="heading-container">IT-SERVICES</h1>
         <div class="bredcumb-con">
             <ul class="my-breadcumb">
                 <li><a href="../index.php">Home</a></li>
-                <li><a href="pc_laptop.html">UNSERE LEISTUNGEN</a></li>
+                <li><a href="pc_laptop.html">IT-SERVICES</a></li>
             </ul>
         </div>
     </div>
@@ -42,19 +42,36 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-12 no-padding product-container">
                         <div class="col-xs-12 col-md-12 service-conatiner">
-                            <h2>UNSERE LEISTUNGEN</h2>
-                            <h3>Wir bieten Ihnen Rundumversorgung für Ihre
-                                digitale Welt.</h3>
-                            <p>Egal ob zu Hause oder am Arbeitsplatz, ohne PC,
-                                Laptop und Smartphone geht heute in
-                                vielen Bereichen nichts mehr. Wie intensiv diese
-                                Geräte heute unseren Alltag bestimmen,
-                                bemerken wir meist erst, wenn sie mal nicht
-                                funktioniern.</p>
-                            <label>Dann sind Sie bei uns genau richtg! Wir
-                                bringen das wieder in Ordnung!</label>
+                            <h2>PROFESSIONELLER IT-SERVICE</h2>
+                            <h3>Unsere Leistungen für den Businessbereich</h3>
+                            <p></p>
                         </div>
-
+                        <!-- Consulting Block Beginning -->
+                        <div class="col-xs-12 col-md-12 no-padding product-container margin-product-container">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="col-xs-12 col-md-12 ready-pc-img-container">
+                                    <img src="../images/peripheralls.jpg" alt=""
+                                         class="img-responsive"/>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-5 pull-right">
+                                <div class="col-xs-12 col-md-12 product-description">
+                                    <h2>PLANUNG & CONSULTING</h2>
+                                    <ul>
+                                        <li>Jedes Projekt braucht einer
+                                            umfangreiche Planung. Nur so kann
+                                            ein erfolgreiches Resultat
+                                            garantiert werden. Notefix-IT
+                                            unterstützt Sie von Anfang an und
+                                            begleitet Sie als verlässlicher
+                                            Partner.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Hardware Block End -->
+                        <!-- Software Block Beginning -->
                         <div class="col-xs-12 col-md-6">
                             <div class="col-xs-12 col-md-12 product-description">
                                 <h2>SOFTWARE</h2>
@@ -87,7 +104,8 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Software Block End -->
+                    <!-- Hardware Block Beginning -->
                     <div class="col-xs-12 col-md-12 no-padding product-container margin-product-container">
                         <div class="col-xs-12 col-md-6">
                             <div class="col-xs-12 col-md-12 ready-pc-img-container">
@@ -120,7 +138,8 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- Hardware Block End -->
+                    <!-- Network Block Beginning -->
                     <div class="col-xs-12 col-md-6">
                         <div class="col-xs-12 col-md-12 product-description">
                             <h2>NETWORK</h2>
@@ -128,10 +147,12 @@
                                 <li>Bedarfsanalyse</li>
                                 <li>Planung</li>
                                 <li>Einrichtung und Konfiguration der
-                                    Periferie
+                                    Peripherie
                                 </li>
+                                <li>Verkabelung</li>
                                 <li>Wartung</li>
                                 <li>Remotedienst</li>
+                                <li>Erweiterung</li>
                                 <li>Einrichtung von Internetzugängen</li>
                             </ul>
                         </div>
@@ -142,6 +163,7 @@
                                  class="img-responsive"/>
                         </div>
                     </div>
+                    <!-- Network Block End -->
                 </div>
             </div>
         </div>

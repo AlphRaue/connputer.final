@@ -45,53 +45,7 @@
 	</div>
 	</div>
 
-
-<div class="container-fluid final-footer">
-<div class="container">
-<div class="row">
-<div class="col-md-4 footer-block-container">
-<h2>Company</h2>
-<ul>
-<li><a href="#">Shop</a></li>
-<li><a href="reparatur.html">UNSERE LEISTUNGEN</a></li>
-<li><a href="ankauf.html">ANKAUF</a></li>
-<li><a href="leistungen.html">IT-Services</a></li>
-</ul>
-</div>
-<div class="col-md-5 footer-block-container">
-<h2>Terms & Privacy</h2>
-<ul>
-    <li><a href="impressum.php">Impresssum</a></li>
-<li><a href="agb.html">AGB</a></li>
-<li><a href="agb.html">datenschutz</a></li>
-<li><a href="sitemap.html">sitemap</a></li>
-</ul>
-</div>
-
-<div class="col-md-3 footer-block-container">
-<h2>Contact To</h2>
-<h3>Head Office</h3>
-<p>ConnPuter / Dominik Rein</p>
-<p>Bornaische Str. 72</p>
-<p>04277 Leipzig</p>
-</div>
-</div>
-</div>
-</div>
-<div class="container-fluid footer-info">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="col-xs-12 col-md-4 copy-rights"><p>copyright © 2018 by connputer</p></div>
-<div class="col-xs-12 col-md-4 copy-rights"><p>We Accepted:<img src="../images/creditcards-payment.png"/></p></div>
-<div class="col-xs-12 col-md-4">
-<!--
-<ul class="footer-links">
-<li><a href="impressum.php">Impressum</li>
-<li><a href="agb.html">AGB</li>
-<li><a href="sitemap.html">Site Map</li>
-</ul>
--->
+<?php include_once("../sites/static/footer.html"); ?>
 
 </div>
 </div>
