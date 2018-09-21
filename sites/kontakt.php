@@ -92,26 +92,91 @@
                             </div>
                         </div>
                     </div>
-<!-- TODO (21.September.2018 - 2:17:16)~Alph: Das Formular ist noch nicht valide!  -->
+                    <!-- TODO (21.September.2018 - 2:17:16)~Alph: Ab hier das Formular  -->
                     <div class="col-xs-12 col-md-12 product-description contact-container">
                         <h2>Fragen? Anregungen? Kritik? Schreiben Sie uns!</h2>
-                        <form action="#">
-                            <p>
-                                <input type="text" name="name" id="name"
-                                       placeholder="Ihr Name"/>
-                                <input type="email" name="mail" id="mail"
-                                       placeholder="Ihre Mailadresse"/>
-                            </p>
-                            <p class="subject-container">
-                                <input type="text" name="betreff" id="betreff"
-                                       placeholder="Ihr Anliegen"/></p>
-                            <p>
-                                <textarea name="text" id="text"
-                                          placeholder="Ihr Kommentar"></textarea>
-                            </p>
-                            <p>
-                                <input type="submit" value="Absenden">
-                            </p>
+                        <br>
+                        <!-- TODO (21.September.2018-18:8:53)~Alph: Noch die Sprungadresse eintragen -->
+                        <form class="form-horizontal"
+                              action="../php/validation.php"
+                              method="post"
+                              accept-charset="UTF-8"
+                              enctype="text/plain"
+                              name="formula_one"
+                              autocomplete="off"
+                        >
+                            <div class="form-group">
+                                <label for="vorname">Vorname</label>
+                                <div class="col-sm-4">
+                                    <input type="text"
+                                           class="form-control"
+                                           id="vorname"
+                                           name="vorname"
+                                           placeholder="Vorname">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="nachname">Nachname</label>
+                                <div class="col-sm-4">
+                                    <input type="text"
+                                           class="form-control"
+                                           id="nachname"
+                                           name="nachname"
+                                           placeholder="Nachname">
+                                </div>
+                            </div>
+                            <!-- FIXME(21.September.2018-18:01:26)~Alph:
+                            EMail Feld immer rechtsbündig! Warum? Alle
+                            anderen Felder der Klasse sind linksbündig.
+                             -->
+                            <!-- TODO (21.September.2018-18:02:26)~Alph:
+                            Rechtbündigkeit hiterfragen und abstellen!
+                             -->
+                            <div class="form-group">
+                                <label for="email">E-Mail Adresse</label>
+                                <div class="col-sm-4">
+                                    <input type="email"
+                                           class="form-control"
+                                           id="email"
+                                           name="email"
+                                           placeholder="EMail">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="betreff">Betreff</label>
+                                <div class="col-sm-4">
+                                    <input type="text"
+                                           class="form-control"
+                                           id="betreff"
+                                           name="betreff"
+                                           placeholder="Betreff">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Ihr Kommentar</label>
+                                <div class="col-sm-6">
+                                    <textarea class="form-control"
+                                              rows="5"
+                                              cols="50"
+                                              wrap="hard"
+                                              id="comment"
+                                              name="comment">
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <button type="submit"
+                                            class="btn-default">Absenden
+                                    </button>
+                                </div>
+                                <div class="col-sm-offset-1 col-sm-1">
+                                    <button type="reset"
+                                            class="btn-danger">Zurücksetzen
+                                    </button>
+                                </div>
+                            </div>
+
                         </form>
                     </div>
                 </div>
