@@ -92,7 +92,7 @@
                             </div>
                         </div>
                     </div>
-
+<!-- TODO (21.September.2018 - 2:17:16)~Alph: Das Formular ist noch nicht valide!  -->
                     <div class="col-xs-12 col-md-12 product-description contact-container">
                         <h2>Fragen? Anregungen? Kritik? Schreiben Sie uns!</h2>
                         <form action="#">
