@@ -53,4 +53,33 @@ $headers[] = "X-Mailer: PHP/" . phpversion();
 mail( $wir, $betreff, $comment, implode( "\r\n", $headers ) );
 
 header( 'LOCATION: ../../sites/kontakt.php' );
+//$wir = "info@connputer.de";
+$wir = "arananka@gmx.de";
+
+$vorname  = trim( htmlspecialchars( $vorname ) );
+$nachname = trim( htmlspecialchars( $nachname ) );
+$email    = trim( htmlspecialchars( $email ) );
+$betreff  = trim( htmlspecialchars( $betreff ) );
+$comment  = trim( htmlspecialchars( $comment ) );
+
+$absender = $nachname . ', ' . $vorname;
+
+$betreff = "=?utf-8?q?" . quoted_printable_encode( $betreff ) . "?=";
+$comment = wordwrap( $comment, 72 );
+
+$headers   = array();
+$headers[] = "MIME-Version: 1.0";
+$headers[] = "Content-type: text/plain; charset=utf-8";
+$headers[] = "From: {$email}";
+// falls Bcc benötigt wird
+// $headers[] = "Bcc: Der Da <mitleser@example.com>";
+$headers[] = "Reply-To: {$email}";
+$headers[] = "Subject: {$betreff}";
+$headers[] = "X-Mailer: PHP/" . phpversion();
+
+// echo_r( $headers );
+
+mail( $wir, $betreff, $comment, implode( "\r\n", $headers ) );
+
+header( 'LOCATION: ../../sites/kontakt.php' );
 exit;
