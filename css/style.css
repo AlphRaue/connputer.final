@@ -488,6 +488,6 @@ padding-bottom: 4px;margin:10px 0;display: inline-block;}
 .phone-number .address__icon{height: 167px;line-height: 188px;}
 }
 
-.undeco {
-    list-style: none;
+.abstand {
+    margin-top: 80px;
 }

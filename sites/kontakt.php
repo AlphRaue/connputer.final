@@ -92,23 +92,19 @@
                             </div>
                         </div>
                     </div>
-    <!-- TODO (20. September 2018 - 0:35:41)~Alph: Das Formular muss noch validiert werden! -->
                     <!-- TODO (21.September.2018 - 2:17:16)~Alph: Ab hier das Formular  -->
                     <div class="col-xs-12 col-md-12 product-description contact-container">
                         <h2>Fragen? Anregungen? Kritik? Schreiben Sie uns!</h2>
-                        <br>
-                        <!-- TODO (21.September.2018-18:8:53)~Alph: Noch die Sprungadresse eintragen -->
+                        <div class="abstand"></div>
                         <form class="form-horizontal"
                               action="../php/validation.php"
                               method="post"
-                              accept-charset="UTF-8"
-                              enctype="text/plain"
                               name="formula_one"
-                              autocomplete="off"
-                        >
+                              accept-charset="UTF-8"
+                              autocomplete="off">
                             <div class="form-group">
-                                <label for="vorname">Vorname</label>
-                                <div class="col-sm-4">
+                                <label for="vorname"></label>
+                                <div class="col-lg-10 col-md-10 col-sm-10">
                                     <input type="text"
                                            class="form-control"
                                            id="vorname"
@@ -117,8 +113,8 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="nachname">Nachname</label>
-                                <div class="col-sm-4">
+                                <label for="nachname"></label>
+                                <div class="col-lg-10 col-md-10 col-sm-10">
                                     <input type="text"
                                            class="form-control"
                                            id="nachname"
@@ -126,26 +122,20 @@
                                            placeholder="Nachname">
                                 </div>
                             </div>
-                            <!-- FIXME(21.September.2018-18:01:26)~Alph:
-                            EMail Feld immer rechtsbündig! Warum? Alle
-                            anderen Felder der Klasse sind linksbündig.
-                             -->
-                            <!-- TODO (21.September.2018-18:02:26)~Alph:
-                            Rechtbündigkeit hiterfragen und abstellen!
-                             -->
                             <div class="form-group">
-                                <label for="email">E-Mail Adresse</label>
-                                <div class="col-sm-4">
+                                <label for="email"></label>
+                                <div class="col-lg-10 col-md-10 col-sm-10">
                                     <input type="email"
                                            class="form-control"
                                            id="email"
                                            name="email"
-                                           placeholder="EMail">
+                                           placeholder="EMail"
+                                           style="float: left">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="betreff">Betreff</label>
-                                <div class="col-sm-4">
+                                <label for="betreff"></label>
+                                <div class="col-lg-10 col-md-10 col-sm-10">
                                     <input type="text"
                                            class="form-control"
                                            id="betreff"
@@ -166,18 +156,17 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-1 col-sm-1">
+                                <div class="col-sm-offset-1 col-sm-2">
                                     <button type="submit"
-                                            class="btn-default">Absenden
+                                            class="btn btn-primary">Absenden
                                     </button>
                                 </div>
-                                <div class="col-sm-offset-1 col-sm-1">
+                                <div class="col-sm-offset-1 col-sm-2">
                                     <button type="reset"
-                                            class="btn-danger">Zurücksetzen
+                                            class="btn btn-danger">Zurücksetzen
                                     </button>
                                 </div>
                             </div>
-
                         </form>
                     </div>
                 </div>

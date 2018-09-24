@@ -54,7 +54,7 @@
             </div>
         </div>
     </div>
-<?php include_once("../sites/static/footer.html"); ?>
+	<?php include_once( "../sites/static/footer.html" ); ?>
 
 </div>
 </div>
