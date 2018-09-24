@@ -6,26 +6,51 @@
  * Time: 18:12
  */
 
-$vorname = "";
-$nachname = "";
-$email = "";
-$betreff = "";
-$text = "";
+header( "Content-Type: text/html; charset=utf-8" );
 
-$vorname = htmlspecialchars($_POST["vorname"]);
-$nachname = htmlspecialchars($_POST["nachname"]);
-$email = htmlspecialchars($_POST["email"]);
-$betreff = htmlspecialchars($_POST["betreff"]);
-$text = htmlspecialchars($_POST["text"]);
+include_once( "helper.php" );
 
-var_dump($_POST);
+$vorname  = null;
+$nachname = null;
+$email    = null;
+$betreff  = null;
+$text     = null;
+$wir      = null;
 
-print $vorname . "<br>";
-print $nachname . "<br>";
-print $email . "<br>";
-print $betreff . "<br>";
-print $text . "<br>";
+$vorname  = ( $_POST["vorname"] );
+$nachname = ( $_POST["nachname"] );
+$email    = ( $_POST["email"] );
+$betreff  = ( $_POST["betreff"] );
+$comment  = ( $_POST["comment"] );
 
-/* header('LOCATION: ../../sites/kontakt.php');
+//$wir = "info@connputer.de";
+$wir = "arananka@gmx.de";
+
+$vorname  = trim( htmlspecialchars( $vorname ) );
+$nachname = trim( htmlspecialchars( $nachname ) );
+$email    = trim( htmlspecialchars( $email ) );
+$betreff  = trim( htmlspecialchars( $betreff ) );
+$comment  = trim( htmlspecialchars( $comment ) );
+
+$absender = "Abs.: " . $nachname . ', ' . $vorname . " (" . $email . ")";
+
+$betreff = "=?utf-8?q?" . quoted_printable_encode( $betreff ) . "?=";
+$comment = $comment . "\n\n\n" . $absender;
+$comment = wordwrap( $comment, 72 );
+
+$headers   = array();
+$headers[] = "MIME-Version: 1.0";
+$headers[] = "Content-type: text/plain; charset=utf-8";
+$headers[] = "From: {$email}";
+// falls Bcc benötigt wird
+// $headers[] = "Bcc: Der Da <mitleser@example.com>";
+$headers[] = "Reply-To: {$email}";
+$headers[] = "Subject: {$betreff}";
+$headers[] = "X-Mailer: PHP/" . phpversion();
+
+// echo_r( $headers );
+
+mail( $wir, $betreff, $comment, implode( "\r\n", $headers ) );
+
+header( 'LOCATION: ../../sites/kontakt.php' );
 exit;
-*/
