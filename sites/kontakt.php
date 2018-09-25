@@ -2,27 +2,13 @@
 <html lang="de">
 <head>
     <title>ConnPuter Kontakt</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-          rel="stylesheet">
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/animate.css" rel="stylesheet">
-
-    <script src="../js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/conn_script.js"></script>
+    <?php include_once("../sites/static/head.html"); ?>
 </head>
 
 <body>
-
 <?php include_once("../sites/static/header.html"); ?>
 
+<!-- MAIN kontakt.php -->
 <div class="container-fluid aktu-bg">
     <div class="container">
         <h1 class="heading-container">Kontakt</h1>
@@ -109,7 +95,9 @@
                                            class="form-control"
                                            id="vorname"
                                            name="vorname"
-                                           placeholder="Vorname">
+                                           placeholder="Vorname"
+                                           required
+                                    >
                                 </div>
                             </div>
                             <div class="form-group">
@@ -119,7 +107,9 @@
                                            class="form-control"
                                            id="nachname"
                                            name="nachname"
-                                           placeholder="Nachname">
+                                           placeholder="Nachname"
+                                           required
+                                    >
                                 </div>
                             </div>
                             <div class="form-group">
@@ -130,7 +120,9 @@
                                            id="email"
                                            name="email"
                                            placeholder="EMail"
-                                           style="float: left">
+                                           style="float: left"
+                                           required
+                                    >
                                 </div>
                             </div>
                             <div class="form-group">
@@ -140,7 +132,9 @@
                                            class="form-control"
                                            id="betreff"
                                            name="betreff"
-                                           placeholder="Betreff">
+                                           placeholder="Betreff"
+                                           required
+                                    >
                                 </div>
                             </div>
                             <div class="form-group">
@@ -151,7 +145,9 @@
                                               cols="50"
                                               wrap="hard"
                                               id="comment"
-                                              name="comment">
+                                              name="comment"
+                                              required
+                                    >
                                     </textarea>
                                 </div>
                             </div>
@@ -174,6 +170,7 @@
         </div>
     </div>
 </div>
+<!-- MAIN End -->
 
 <?php include_once("../sites/static/footer.html"); ?>
 

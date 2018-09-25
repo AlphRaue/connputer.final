@@ -2,26 +2,10 @@
 <html lang="de">
 <head>
     <title>Ihr IT-Profi in Leipzig</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="google-site-verification" content="MaBgedn6XYxtNFyZh8ulLpEod-y-43lyn-wTqsb4Fw8" />
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-          rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-
-    <script src="js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/conn_script.js"></script>
+    <?php include_once("sites/static/head.html"); ?>
 </head>
 
 <body>
-
 <?php include_once("sites/static/header.html"); ?>
 
 <!-- MAIN -->

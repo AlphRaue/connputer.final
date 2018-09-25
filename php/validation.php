@@ -9,6 +9,7 @@
 header( "Content-Type: text/html; charset=utf-8" );
 
 include_once( "helper.php" );
+include_once("f_emailcheck.php");
 
 $vorname  = null;
 $nachname = null;
@@ -17,14 +18,40 @@ $betreff  = null;
 $text     = null;
 $wir      = null;
 
-$vorname  = ( $_POST["vorname"] );
-$nachname = ( $_POST["nachname"] );
-$email    = ( $_POST["email"] );
-$betreff  = ( $_POST["betreff"] );
-$comment  = ( $_POST["comment"] );
+if (isset($_POST["vorname"])) {
+    $vorname = ($_POST["vorname"]);
+} else {
+    header('LOCATION: ../../sites/kontakt.php');
+    exit;
+};
 
-//$wir = "info@connputer.de";
-$wir = "arananka@gmx.de";
+if (isset($_POST["nachname"])) {
+    $nachname = ($_POST["nachname"]);
+} else {
+    header('LOCATION: ../../sites/kontakt.php');
+    exit;
+};
+
+if (isset($_POST["email"])) {
+    $email = ($_POST["email"]);
+} else {
+    header('LOCATION: ../../sites/kontakt.php');
+    exit;
+};
+
+if (isset($_POST["betreff"])) {
+    $betreff = ($_POST["betreff"]);
+} else {
+    header('LOCATION: ../../sites/kontakt.php');
+    exit;
+};
+
+if (isset($_POST["text"])) {
+    $comment = ($_POST["text"]);
+} else {
+    header('LOCATION: ../../sites/kontakt.php');
+    exit;
+};
 
 $vorname  = trim( htmlspecialchars( $vorname ) );
 $nachname = trim( htmlspecialchars( $nachname ) );
@@ -64,7 +91,11 @@ $comment  = trim( htmlspecialchars( $comment ) );
 
 $absender = $nachname . ', ' . $vorname;
 
+$wir = "info@connputer.de";
+// $wir = "arananka@gmx.de";
+
 $betreff = "=?utf-8?q?" . quoted_printable_encode( $betreff ) . "?=";
+$comment = $comment . "\n\n\n" . $absender . " (" . $email . ")";
 $comment = wordwrap( $comment, 72 );
 
 $headers   = array();
