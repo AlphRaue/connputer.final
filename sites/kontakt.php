@@ -2,11 +2,11 @@
 <html lang="de">
 <head>
     <title>ConnPuter Kontakt</title>
-    <?php include_once("../sites/static/head.html"); ?>
+	<?php include_once( "../sites/static/head.html" ); ?>
 </head>
 
 <body>
-<?php include_once("../sites/static/header.html"); ?>
+<?php include_once( "../sites/static/header.html" ); ?>
 
 <!-- MAIN kontakt.php -->
 <div class="container-fluid aktu-bg">
@@ -56,7 +56,7 @@
                                 <div class="address__details"
                                      style="padding:25px !important">
                                     <h2 class="ct__title">
-                                        &oumlffnungszeiten</h2>
+                                        Öfnungszeiten</h2>
                                     <p>
                                         <span>Montag & Dienstag von 10 bis 18 Uhr</span>
                                         <span>Mittwoch bis Freitag von 10 bis 19
@@ -78,10 +78,28 @@
                             </div>
                         </div>
                     </div>
-                    <!-- TODO (21.September.2018 - 2:17:16)~Alph: Ab hier das Formular  -->
+                    <!-- Formular START -->
                     <div class="col-xs-12 col-md-12 product-description contact-container">
+                        <a id="formular"></a>
                         <h2>Fragen? Anregungen? Kritik? Schreiben Sie uns!</h2>
                         <div class="abstand"></div>
+                        <div class="form-group has-success">
+                            <label class="control-label" for="sendgood"></label>
+                            <input
+			                    <?php // Auslösen der Sendebestätigung:
+			                    if ( isset( $_GET["ifsend"] ) ) {
+				                    echo "type=text";
+			                    } else {
+				                    echo "type=hidden";
+			                    };
+			                    ?>
+                                    class="form-control"
+                                    id="sendgood"
+                                    placeholder="Ihr Kommentar wurde versendet. Wir melden uns Bei Ihnen."
+                                    readonly
+                                    style="background-color: #c9e2b3; border-color:#5e5e5e"
+                            >
+                        </div>
                         <form class="form-horizontal"
                               action="../php/validation.php"
                               method="post"
@@ -132,7 +150,8 @@
                                            class="form-control"
                                            id="betreff"
                                            name="betreff"
-                                           placeholder="Betreff"
+                                           placeholder="Betreff (max. 25 Zeichen)"
+                                           maxlength="25"
                                            required
                                     >
                                 </div>
@@ -146,6 +165,7 @@
                                               wrap="hard"
                                               id="comment"
                                               name="comment"
+                                              maxlength="1111"
                                               required
                                     >
                                     </textarea>
@@ -165,6 +185,7 @@
                             </div>
                         </form>
                     </div>
+                    <!-- Formular END -->
                 </div>
             </div>
         </div>
@@ -172,7 +193,7 @@
 </div>
 <!-- MAIN End -->
 
-<?php include_once("../sites/static/footer.html"); ?>
+<?php include_once( "../sites/static/footer.html" ); ?>
 
 </body>
 </html>

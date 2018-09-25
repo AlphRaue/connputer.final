@@ -28,7 +28,8 @@
                     <div class="col-xs-12 col-md-12">
                         <div class="col-xs-12 col-md-12">
                             <h2>IMPRESSUM</h2>
-                            <p>Externe Links: Das Landgericht Hamburg (LG) hat mit Urteil vom 12.05.1998 (312 O 85/98 -
+                            <p title="Externe Links">Externe Links: Das Landgericht Hamburg (LG) hat mit Urteil vom
+                                12.05.1998 (312 O 85/98 -
                                 "Haftung für Links") entschieden, dass man durch die Ausbringung eines Links die Inhalte
                                 der gelinkten Seite ggf. mit zu verantworten hat. Dies kann - so das LG - nur dadurch
                                 verhindert werden, dass man sich ausdrücklich von diesen Inhalten distanziert. Aus

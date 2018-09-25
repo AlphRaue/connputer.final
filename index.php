@@ -8,7 +8,7 @@
 <body>
 <?php include_once("sites/static/header.html"); ?>
 
-<!-- MAIN -->
+<!-- MAIN index.php -->
 <div class="container-fluid no-padding">
     <div id="myCarousel" class="carousel  slide">
         <!-- Dot Indicators -->
