@@ -86,13 +86,13 @@
                         <div class="form-group has-success">
                             <label class="control-label" for="sendgood"></label>
                             <input
-			                    <?php // Auslösen der Sendebestätigung:
-			                    if ( isset( $_GET["ifsend"] ) ) {
-				                    echo "type=text";
-			                    } else {
-				                    echo "type=hidden";
-			                    };
-			                    ?>
+								<?php // Auslösen der Sendebestätigung:
+								if ( isset( $_GET["ifsend"] ) ) {
+									echo "type=text";
+								} else {
+									echo "type=hidden";
+								};
+								?>
                                     class="form-control"
                                     id="sendgood"
                                     placeholder="Ihr Kommentar wurde versendet. Wir melden uns Bei Ihnen."
@@ -165,7 +165,7 @@
                                               wrap="hard"
                                               id="comment"
                                               name="comment"
-                                              maxlength="1111"
+                                              maxlength="999"
                                               required
                                     >
                                     </textarea>
