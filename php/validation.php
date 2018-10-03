@@ -72,7 +72,7 @@ $headers[] = "X-Mailer: PHP/" . phpversion();
 
 // Empfängeradresse festlegen:
 $wir = "info@connputer.de";
-// $wir = "arananka@gmx.de";
+//$wir = "arananka@gmx.de";
 
 // Mail versenden:
 mail( $wir, $betreff, $comment, implode( "\r\n", $headers ) );

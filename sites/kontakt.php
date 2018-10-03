@@ -6,7 +6,10 @@
 </head>
 
 <body>
-<?php include_once( "../sites/static/header.html" ); ?>
+
+<?php
+include_once( "../sites/static/header.html" );
+?>
 
 <!-- MAIN kontakt.php -->
 <div class="container-fluid aktu-bg">
@@ -133,12 +136,13 @@
                             <div class="form-group">
                                 <label for="email"></label>
                                 <div class="col-lg-10 col-md-10 col-sm-10">
-                                    <input type="email"
+                                    <input type="text"
                                            class="form-control"
                                            id="email"
                                            name="email"
+                                           pattern="(?:[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*|'(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*')@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
                                            placeholder="EMail"
-                                           style="float: left"
+                                           title="Geben Sie eine gültige E-Mail Adresse in der Form max.musterman@host.de ein!"
                                            required
                                     >
                                 </div>
