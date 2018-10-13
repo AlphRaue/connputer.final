@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <title>ConnPuter Kontakt</title>
-	<?php include_once( "../sites/static/head.html" ); ?>
+    <?php include_once("../sites/static/head.html"); ?>
 </head>
 
 <body>
@@ -86,13 +86,13 @@
                         <div class="form-group has-success">
                             <label class="control-label" for="sendgood"></label>
                             <input
-			                    <?php // Auslösen der Sendebestätigung:
-			                    if ( isset( $_GET["ifsend"] ) ) {
-				                    echo "type=text";
-			                    } else {
-				                    echo "type=hidden";
-			                    };
-			                    ?>
+                                <?php // Auslösen der Sendebestätigung:
+                                if (isset($_GET["ifsend"])) {
+                                    echo "type=text";
+                                } else {
+                                    echo "type=hidden";
+                                };
+                                ?>
                                     class="form-control"
                                     id="sendgood"
                                     placeholder="Ihr Kommentar wurde versendet. Wir melden uns Bei Ihnen."
@@ -159,16 +159,16 @@
                             <div class="form-group">
                                 <label for="comment">Ihr Kommentar</label>
                                 <div class="col-sm-6">
+                                    <!-- For "placeholder": No whitespace or wordwrap between "></textarea>"!!! -->
                                     <textarea class="form-control"
                                               rows="5"
                                               cols="50"
                                               wrap="hard"
                                               id="comment"
                                               name="comment"
-                                              maxlength="1111"
-                                              required
-                                    >
-                                    </textarea>
+                                              placeholder="Ihr Kommentar (max. 1000 Zeichen)"
+                                              maxlength="1000"
+                                              required></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
